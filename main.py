@@ -49,14 +49,10 @@ def wordcloud(clean_text):
     return image
     
 
-
 def pdf_extract():
     st.set_page_config(layout = "wide")
     st.title("PDF data extraction")
-
-    
     fileupload = st.sidebar.file_uploader("Upload a PDF document here")
-
     if fileupload:
         pdfbytes = fileupload.getvalue()
         doc = return_doc_from_bytes(pdfbytes)  
@@ -69,7 +65,7 @@ def pdf_extract():
         image=wordcloud(clean_text)
         st.header("WordCloud !")
         st.image(image)
-        
+       
 
 if __name__ == "__main__":
     pdf_extract()
