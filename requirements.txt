@@ -1,5 +1,4 @@
-matplotlib
-wordcloud
+PyMuPDF
 nltk
 streamlit
-pandas
+pydaisi
